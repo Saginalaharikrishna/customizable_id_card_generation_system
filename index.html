@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customizable ID Card Generator</title>
+  
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px 20px;
+  background: #004aad;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  flex: 1;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #004aad;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #004aad;
+  color: #fff;
+}
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>🎓 Customizable ID Card Generator</h1>
+    <p>Welcome! Create stunning ID cards in minutes.</p>
+  </header>
+
+  <main class="card-container">
+    <div class="card" onclick="location.href='single.html'">
+      <h2>Single ID Card Generation</h2>
+      <p>Create an ID card for a single student with custom details.</p>
+    </div>
+
+    <div class="card" onclick="location.href='bulk.html'">
+      <h2>Bulk ID Card Generation</h2>
+      <p>Import an Excel file and generate multiple ID cards at once.</p>
+    </div>
+
+    <div class="card" onclick="location.href='customize.html'">
+      <h2>Customize Your ID Card</h2>
+      <p>Use the flexible designer to build your own ID card template.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your College Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
