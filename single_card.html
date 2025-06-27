@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customizable ID Card</title>
+  <link rel="stylesheet" href="single_card.css" />
+</head>
+<body>
+  <header><h1>Customizable ID Card Generation</h1></header>
+
+  <div class="instructions">
+  <h2>How to Use</h2>
+  <p>✔️ Select any one of the ID cards by clicking it.</p>
+  <p>✔️ Fill out the form that appears below the sample cards.</p>
+  <p>✔️ Click "Apply to Card" to update the card with your data.</p>
+  <p>✔️ Finally, click "Generate as PNG" to download your customized ID card.</p>
+</div>
+
+
+  <div class="cards-container">
+    <!-- 📌 STUDENT-1 Card -->
+    <div class="id-card student-1" data-type="student-1">
+      <div class="university-header">UNIVERSITY OF TECHNOLOGY</div>
+      <div class="photo">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student Photo">
+      </div>
+      <div class="info">
+        <div class="name">Emily Johnson</div>
+        <div class="id-number">ID: STU20230045</div>
+        <div class="details">
+          <p><strong>Program:</strong> Computer Science</p>
+          <p><strong>Year:</strong> 3rd Year</p>
+          <p><strong>Valid Until:</strong> 06/2025</p>
+          <p><strong>DOB:</strong> 05/12/2002</p>
+        </div>
+      </div>
+      <div class="university-logo">UOTECH</div>
+    </div>
+
+    <!-- 📌 STUDENT-2 Card -->
+    <div class="id-card student-2" data-type="student-2">
+      <div class="school-header">
+        <span>GREENWOOD HIGH</span>
+        <span class="school-id">ID: GH-7890</span>
+      </div>
+      <div class="content">
+        <div class="photo">
+          <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Student Photo">
+        </div>
+        <div class="info">
+          <div class="name">David Wilson</div>
+          <div class="grade">Grade 11 - Section B</div>
+          <div class="details">
+            <div class="detail">
+              <span class="detail-label">Roll No:</span>
+              <span class="detail-value">27</span>
+            </div>
+            <div class="detail">
+              <span class="detail-label">DOB:</span>
+              <span class="detail-value">14/03/2007</span>
+            </div>
+            <div class="detail">
+              <span class="detail-label">Blood Group:</span>
+              <span class="detail-value">B+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="barcode">STUDENT ID</div>
+    </div>
+
+    <!-- 📌 EMPLOYEE Card -->
+    <div class="id-card employee" data-type="employee">
+      <div class="company-stripe"></div>
+      <div class="content">
+        <div class="photo">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Employee Photo">
+        </div>
+        <div class="info">
+          <div class="name">Robert Chen</div>
+          <div class="position">Senior Developer</div>
+          <div class="details">
+            <div class="detail">Employee ID: DEV-7845</div>
+            <div class="detail">Department: IT</div>
+            <div class="detail">Join Date: 15/08/2020</div>
+            <div class="detail">Valid Until: 31/12/2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="company">TECHNOVA INC</div>
+    </div>
+
+    <!-- 📌 TEACHER Card -->
+    <div class="id-card teacher" data-type="teacher">
+      <div class="header">CERTIFIED EDUCATOR</div>
+      <div class="content">
+        <div class="photo">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Teacher Photo">
+        </div>
+        <div class="info">
+          <div class="name">Sarah Williams</div>
+          <div class="subject">Mathematics Department</div>
+          <div class="details">
+            <div class="detail"><span class="detail-label">Employee ID:</span><span class="detail-value">TCH-M-124</span></div>
+            <div class="detail"><span class="detail-label">Qualification:</span><span class="detail-value">M.Sc, B.Ed</span></div>
+            <div class="detail"><span class="detail-label">Years of Service:</span><span class="detail-value">8</span></div>
+            <div class="detail"><span class="detail-label">Valid Until:</span><span class="detail-value">2026</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="school-seal">CITY PUBLIC SCHOOL</div>
+    </div>
+  </div>
+
+  <div class="card-form-wrapper">
+    <div id="formContainer"></div>
+  </div>
+  <div id="generateContainer"></div>
+
+
+  <script src="single.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</body>
+</html>
